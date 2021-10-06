@@ -1,0 +1,18 @@
+.section-two {
+    background-color: #e8f6ff;
+    padding-top: 90px;
+    &__inner {
+        flex-direction: row-reverse;
+    }
+    &__left {
+        margin-right: 0;
+    }
+    & .slider__item {
+        &-price {
+            padding: 58px 12px 55px 20px;
+            & > span {
+                font-size: 37px;
+            }
+        }
+    }
+}

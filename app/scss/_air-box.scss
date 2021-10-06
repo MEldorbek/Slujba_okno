@@ -1,0 +1,31 @@
+.air-box {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80.8%, #ffffff 97.88%), #e8f6ff;
+    padding: 97px 0 90px;
+    &__title{
+        background-image: url(../images/h2right2.svg);
+        color: var(--blue);
+        margin-bottom: 56px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        margin-right: 30px;
+    }
+    &__texts{
+        color: var(--font2);
+        & p{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        & ul{
+            list-style: none;
+        }
+        & li{
+            padding-left: 37px;
+            font-size: 16px;
+            line-height: 1;
+        }
+    }
+}

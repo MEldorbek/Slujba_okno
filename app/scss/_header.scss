@@ -1,10 +1,11 @@
 .header {
     padding: 30px 0;
     margin-bottom: 12px;
-    &__top{
+    &__top {
         margin-bottom: 38px;
     }
-    &__top, &__bottom{
+    &__top,
+    &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,13 +19,10 @@
         & a {
             position: relative;
             padding-left: 24px;
-            &::before {
-                position: absolute;
-                content: "";
-            }
             &:nth-child(1) {
                 color: var(--font3);
                 &::before {
+                    content: "";
                     background-image: url(../images/header/map.svg);
                     width: 18px;
                     height: 20px;
@@ -38,6 +36,7 @@
                 border: 1px solid #25cf43;
                 padding: 14px 27px 14px 52px;
                 &::before {
+                    content: "";
                     background-image: url(../images/header/whatsapp.svg);
                     width: 17px;
                     height: 17px;
@@ -49,6 +48,7 @@
                 padding-left: 32px;
                 color: var(--font1);
                 &::before {
+                    content: "";
                     background-image: url(../images/header/phone.svg);
                     width: 26px;
                     height: 25px;
