@@ -1,0 +1,56 @@
+.photo {
+    padding: 90px 0;
+    &__item {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 47px;
+        & .item {
+            margin-bottom: 30px;
+            background: var(--white);
+            border-radius: 6px;
+            & p {
+                padding: 22px 20px 38px;
+                color: var(--font3);
+            }
+        }
+    }
+    & .slick-dots li button {
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #ebecf0;
+        background-blend-mode: soft-light, normal;
+        border-radius: 4px;
+        &::before {
+            content: none;
+        }
+    }
+    & .slick-dots li.slick-active button {
+        border: 1px solid var(--blue);
+        background: none;
+    }
+    & .slick-arrow{
+        background-color: var(--blue);
+        width: 38px;
+        height: 38px;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: auto;
+        bottom: -50px;
+        z-index: 1;
+        &::before{
+            content: none;
+        }
+    }
+    & .slick-prev{
+        background-image: url(../images/photo/arrow-left.svg);
+        left: calc(50% - 200px);
+    }
+    & .slick-next{
+        background-image: url(../images/photo/arrow-right.svg);
+        right: calc(50% - 200px);
+    }
+}

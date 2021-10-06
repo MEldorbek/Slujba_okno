@@ -1,0 +1,57 @@
+.atmosfera {
+    background-image: url(./images/atmosfera/bg.png);
+    background-color: rgba(21, 103, 233, 0.24);
+    background-repeat: no-repeat;
+    &__inner {
+        padding: 90px 0 85px 120px;
+        position: relative;
+    }
+    & h2 {
+        width: 494px;
+        color: var(--font2);
+        margin-bottom: 15px;
+    }
+    &__str {
+        width: 417px;
+        color: var(--font1);
+        margin-bottom: 57px;
+    }
+    &__btn {
+        display: inline-block;
+        padding: 24px 50px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #1567e9;
+        box-shadow: 0px 24px 44px rgba(21, 103, 233, 0.31);
+        border-radius: 55px;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        position: relative;
+        &::after{
+            content: '';
+            width: 45px;
+            height: 104px;
+            background-image: url(../images/atmosfera/vector.svg);
+            bottom: 50px;
+            right: -70px;
+        }
+        &:hover{
+            background: none;
+            background-color: #085adb;
+        }
+        & ~ p {
+            width: 364px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: var(--font1);
+        }
+    }
+    &__img {
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+}

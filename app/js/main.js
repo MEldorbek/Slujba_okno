@@ -31,4 +31,9 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
     });
+
+    $('.photo__inner').slick({
+        arrows: true,
+        dots: true,
+    });
 });
