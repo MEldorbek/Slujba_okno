@@ -1,0 +1,81 @@
+.header {
+    padding: 30px 0;
+    margin-bottom: 12px;
+    &__top{
+        margin-bottom: 38px;
+    }
+    &__top, &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        color: var(--font2);
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        & a {
+            position: relative;
+            padding-left: 24px;
+            &::before {
+                position: absolute;
+                content: "";
+            }
+            &:nth-child(1) {
+                color: var(--font3);
+                &::before {
+                    background-image: url(../images/header/map.svg);
+                    width: 18px;
+                    height: 20px;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+            &:nth-child(2) {
+                color: #25cf43;
+                border-radius: 84px;
+                border: 1px solid #25cf43;
+                padding: 14px 27px 14px 52px;
+                &::before {
+                    background-image: url(../images/header/whatsapp.svg);
+                    width: 17px;
+                    height: 17px;
+                    left: 28px;
+                    top: 13px;
+                }
+            }
+            &:nth-child(3) {
+                padding-left: 32px;
+                color: var(--font1);
+                &::before {
+                    background-image: url(../images/header/phone.svg);
+                    width: 26px;
+                    height: 25px;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        & a + a {
+            margin-left: 47px;
+        }
+    }
+    &__menu {
+        &-list {
+            right: 0;
+            list-style: none;
+            & li {
+                display: inline-block;
+                & + li {
+                    border-left: 1px solid #999;
+                    margin-left: 32px;
+                    padding-left: 33px;
+                }
+            }
+            & a {
+                color: #000;
+            }
+        }
+    }
+}
