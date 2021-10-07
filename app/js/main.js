@@ -50,6 +50,13 @@ $(document).ready(function () {
     });
     $('.about__img').slick({
         arrows: true,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                dots: true,
+            }
+        }, ]
     });
     $('.menu__btn').on('click', function () {
         $('.header__info').slideToggle();
