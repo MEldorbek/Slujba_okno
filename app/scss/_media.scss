@@ -585,9 +585,6 @@
     .section-one__right > img {
         width: 280px;
     }
-    .slider__inner{
-        margin-left: -15px;
-    }
     .middle__item{
         width: 280px;
         margin-left: 0;
@@ -596,6 +593,8 @@
     .atmosfera {
         h2 {
             width: 280px;
+            margin-left: auto;
+            margin-right: auto;
         }
         &__str {
             width: 280px;
@@ -608,6 +607,14 @@
         }
         &__btn ~ p {
             width: auto;
+        }
+    }
+    .photo{
+        & .slick-prev{
+            left: 20px;
+        }
+        & .slick-next{
+            right: 20px;
         }
     }
     .about {
@@ -641,6 +648,12 @@
         transform: translateX(0);
     }
    
+}
+
+@media (max-width: 400px) {
+    .slider__inner{
+        margin-left: -15px;
+    }
 }
 
 @media (min-width: 1200px) {
