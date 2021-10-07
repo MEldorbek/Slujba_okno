@@ -1,0 +1,21 @@
+.footer{
+    background-color: #172233;
+    color: #fff;
+    padding: 36px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__text{
+        &:nth-child(1){
+            width: 203px;
+        }
+        &:nth-child(2){
+            width: 601px;
+            text-align: center;
+        }
+    }
+}

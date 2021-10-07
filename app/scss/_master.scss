@@ -1,0 +1,48 @@
+.master {
+    background-color: #113671;
+    color: #fff;
+    overflow: hidden;
+    &__inner{
+        position: relative;
+        padding: 96px 0 197px 550px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: -300px;
+    }
+    &__text{
+        z-index: 1;
+    }
+    & h2 {
+        margin-bottom: 20px;
+    }
+    & p {
+        font-size: 18px;
+        line-height: 37px;
+        color: var(--white);
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../images/master/Icon.svg);
+            left: 0;
+            top: 10px;
+        }
+    }
+    &__btn {
+        position: absolute;
+        color: #fff;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #005ae9;
+        box-shadow: 0px 22px 44px -12px #005ae9;
+        border-radius: 71px;
+        display: inline-block;
+        font-size: 22px;
+        line-height: 1;
+        padding: 24px 50px;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
+}

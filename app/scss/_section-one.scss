@@ -199,6 +199,9 @@
     & .slick-arrow {
         width: 24px;
         height: 24px;
+        &::before{
+            content: none;
+        }
     }
     & .slick-prev {
         background-image: url(../images/section-one/slider/arrow-rigth.svg);
