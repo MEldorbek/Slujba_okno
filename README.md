@@ -16,7 +16,7 @@ If they are not installed, follow the instructions [here](https://nodejs.org/en/
 
 ### To get a local copy run the following steps:
 
-- Copy this link `https://github.com/MEldorbek/Toxin.git`
+- Copy this link `https://github.com/MEldorbek/Slujba_okno.git`
 - Open your terminal or command line
 - Run `git clone` and paste the link
 - Open the folder with your code editor
